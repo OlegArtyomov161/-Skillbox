@@ -100,6 +100,19 @@ body {
   color: var(--mine-shaft-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* header */
 .header {
   background-color: var(--black-color);
@@ -591,10 +604,6 @@ body {
   gap: 79px;
   padding-top: 38px;
   padding-bottom: 38px;
-}
-
-.contacts__title {
-  display: none;
 }
 
 .contacts__place {
