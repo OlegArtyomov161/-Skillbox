@@ -534,6 +534,7 @@ body {
   width: 100%;
   height: 1px;
   background-color: var(--amethyst-color);
+  transition: background-color 0.2s ease-in;
 }
 
 .event__link:focus {
@@ -546,6 +547,10 @@ body {
   opacity: 1;
 }
 
+.event__link:focus::after {
+  background-color: var(--white-color);
+}
+
 .event__link:hover {
   color: var(--royal-purple-color);
   border-color: var(--royal-purple-color);
@@ -555,9 +560,17 @@ body {
   opacity: 0;
 }
 
+.event__link:hover::after {
+  background-color: var(--royal-purple-color);
+}
+
 .event__link:active {
   color: var(--mine-shaft-color);
   border-color: var(--mine-shaft-color);
+}
+
+.event__link:active::after {
+  background-color: var(--mine-shaft-color);
 }
 
 /* projects */
